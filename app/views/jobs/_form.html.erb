@@ -1,0 +1,31 @@
+
+<%= form_with model: @job do |f| %>
+  <div>
+    <%= f.label :company_name %>
+    <%= f.text_field :company_name %>
+  </div>
+  <div>
+    <%= f.label :job_title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :job_description %>
+    <%= f.text_area :description, size: '60x6' %>
+  </div>
+  
+  <div>
+    <%= f.label :job_type %>
+    <%= f.text_field :job_type %>
+  </div>
+  <div>
+    <%= f.label :company_website %>
+    <%= f.text_field :comapny_website %>
+  </div>
+  <div>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
